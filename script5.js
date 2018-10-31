@@ -1,4 +1,4 @@
-const myOwnNew(constructorFn, argsArray) =>{
+const myOwnNew = (constructorFn, argsArray) =>{
     conts newInstance = Object.create(constructorFn.prototype)
     constructorFn.apply(constructorFn, argsArray)
     return newInstance
